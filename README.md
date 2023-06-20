@@ -1,6 +1,5 @@
 # giochi-java-lobby
 giochi in java creati da me e chi collabora con la lobby 
-questi sono giochi in java creati da me e chi collabora
 
 per quanto riguarda l'impiccato per ora va cambiato che:
 
