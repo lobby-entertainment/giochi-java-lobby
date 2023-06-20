@@ -14,3 +14,4 @@ poi ci sono un paio di modifiche fiere che mi vengono in mente:
 -le legge nel single player come le leggeva dalla lista scritta nel codice 
 -nel multiplayer legge il txt e poi controlla se nell'arraylist non sia presente già la nuova parola,
 se non lo è allora si aggiunge altrimenti si prosegue -un altra modifica gradita sarebbe farci consierare il campo in cui scrive la parola da indovinare come una password
+
