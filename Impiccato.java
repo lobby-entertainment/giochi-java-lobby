@@ -1,9 +1,12 @@
+/*----<>----<>----<>----<>------<>------<>-------<>--------<>----------<>--------<>------<>-------<>-------<>------<>---*/
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-
+/*----<>----<>----<>----<>------<>------<>-------<>--------<>----------<>--------<>------<>-------<>-------<>------<>---*/
 public class Impiccato {
+/*----<>----<>----<>----<>------<>------<>-------<>--------<>----------<>--------<>------<>-------<>-------<>------<>---*/
+    private Scanner scanner = new Scanner(System.in);
     private List<String> parole = new ArrayList<>(Arrays.asList(
             "prateria", "pargolo", "partizione", "gelato", "troglodita",
             "dinamite", "nitroglicerina", "demone", "posacenere", "barbone",
@@ -16,11 +19,14 @@ public class Impiccato {
     private StringBuilder parolaIndovinata;
     private int tentativiRimasti, modalitaGioco, difficolta;
     private boolean modalitaFacile, multiOppureNo;
-    private Scanner scanner = new Scanner(System.in);
-
+/*----<>----<>----<>----<>------<>------<>-------<>--------<>----------<>--------<>------<>-------<>-------<>------<>---*/
+    
     public Impiccato(int tentativiRimasti) {
         this.disegnatore = new disegnaImpiccato();
     }
+
+
+/*----<>----<>----<>----<>------<>------<>-------<>--------<>----------<>--------<>------<>-------<>-------<>------<>---*/
 
     public void play() {
         System.out.println("Gioco dell'Impiccato");
@@ -54,10 +60,15 @@ public class Impiccato {
         }
     }
 
+/*----<>----<>----<>----<>------<>------<>-------<>--------<>----------<>--------<>------<>-------<>-------<>------<>---*/
+
     private String selezionaParolaCasuale() {
         int indice = (int) (Math.random() * parole.size());
         return parole.get(indice);
     }
+
+/*----<>----<>----<>----<>------<>------<>-------<>--------<>----------<>--------<>------<>-------<>-------<>------<>---*/
+
 
     public void giocatoreSingolo(boolean multiOppureNo) {
         this.multiOppureNo = multiOppureNo;
@@ -81,6 +92,9 @@ public class Impiccato {
         }
         fineGioco();
     }
+
+/*----<>----<>----<>----<>------<>------<>-------<>--------<>----------<>--------<>------<>-------<>-------<>------<>---*/
+
 
     public void multiGiocatore(boolean multiOppureNo) {
         this.multiOppureNo = multiOppureNo;
@@ -107,6 +121,9 @@ public class Impiccato {
         fineGioco();
     }
 
+
+/*----<>----<>----<>----<>------<>------<>-------<>--------<>----------<>--------<>------<>-------<>-------<>------<>---*/
+
     private void inizializzaGioco() {
         tentativiRimasti = 6;
         if (modalitaFacile) {
@@ -119,6 +136,9 @@ public class Impiccato {
             parolaIndovinata = new StringBuilder("_".repeat(parolaDaIndovinare.length()));
         }
     }
+
+/*----<>----<>----<>----<>------<>------<>-------<>--------<>----------<>--------<>------<>-------<>-------<>------<>---*/
+
 
     private void indovina(char lettera) {
         boolean indovinato = false;
@@ -134,11 +154,16 @@ public class Impiccato {
         }
     }
 
+
+/*----<>----<>----<>----<>------<>------<>-------<>--------<>----------<>--------<>------<>-------<>-------<>------<>---*/
+
     private void inserisciParola() {
         String parolina = scanner.next();
         parolaDaIndovinare = parolina.toLowerCase();
         parolaIndovinata = new StringBuilder("_".repeat(parolaDaIndovinare.length()));
     }
+/*----<>----<>----<>----<>------<>------<>-------<>--------<>----------<>--------<>------<>-------<>-------<>------<>---*/
+
 
     private void fineGioco() {
         if (tentativiRimasti > 0) {
@@ -149,5 +174,5 @@ public class Impiccato {
     }
 }
 
-
+/*----<>----<>----<>----<>------<>------<>-------<>--------<>----------<>--------<>------<>-------<>-------<>------<>---*/
 
