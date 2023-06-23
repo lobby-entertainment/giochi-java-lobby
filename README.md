@@ -3,9 +3,8 @@ giochi in java creati da me e chi collabora con la lobby
 
 per quanto riguarda l'impiccato per ora va cambiato che:
 
--sta prendendo da un array e non da un arraylist
 -in single player legge da una lista di parole scrritta nel codice
--tutto il codice è in un unica classe quando per comodità sarebbe meglio spalmarlo in 3/4
+-gran parte del codice è in un unica classe quando per comodità sarebbe meglio spalmarlo in 3/4
 
 poi ci sono un paio di modifiche fiere che mi vengono in mente:
 
