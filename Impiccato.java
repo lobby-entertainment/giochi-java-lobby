@@ -7,11 +7,12 @@ import java.util.Scanner;
 public class Impiccato {
 /*----<>----<>----<>----<>------<>------<>-------<>--------<>----------<>--------<>------<>-------<>-------<>------<>---*/
     private Scanner scanner = new Scanner(System.in);
-    private List<String> parole = new ArrayList<>(Arrays.asList(
-            "prateria", "pargolo", "partizione", "gelato", "troglodita",
-            "dinamite", "nitroglicerina", "demone", "posacenere", "barbone",
-            "pirateria", "programmazione", "computer", "aiuole", "parsimonia",
-            "droga", "sardina", "brodaglia", "testimone", "aquilone", "peluria"
+    private List<String> parole = new ArrayList<>(Arrays.asList(                                    //sto array va tolto e ci va fatta al suo posto pensavo all'implementazione 
+            "prateria", "pargolo", "partizione", "gelato", "troglodita",                           //d'un controllo prima dell eventuale scrittura e poi vabbè la lettura file 
+            "dinamite", "nitroglicerina", "demone", "posacenere", "barbone","sarcasmo",           //quando ci rimetto mano lo faccio
+            "pirateria","pensiero", "programmazione", "computer", "aiuole", "parsimonia",
+             "sardina", "brodaglia", "testimone", "aquilone", "rugiada","libellula","celibato",
+            "collottola","pallottola","abbecedario","prurigginoso","acquoso","mistificatorio",
     ));
     private String parolaDaIndovinare;
     private String input;
